@@ -1,0 +1,34 @@
+<section id="contato" class="row">
+  <div class="col-sm-12">
+    <div class="card bg-primary">
+      <div class="card-block">
+        <h1 class="card-title">Contato</h1>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a enim ac nulla pretium sollicitudin nec vel nibh. Duis aliquet
+          quam dui, non tincidunt nibh sollicitudin et. Quisque ac tellus eu ligula maximus lacinia. Donec sed justo
+        </p>
+        <div *ngFor="let err of listaErros;">
+          <div class="alert alert-danger">{{err.texto}}</div>
+        </div>
+        <div *ngFor="let err of listaResultado;">
+          <div [ngClass]="{'alert-success': err.sucesso, 'alert-danger': !err.sucesso}" 
+              class="alert">{{err.texto}}
+          </div>
+        </div>
+        <form [formGroup]="contatoForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="nome" placeholder="nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" formControlName="email" placeholder="e-mail" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" formControlName="texto" rows="3" placeholder="deixe um comentário" required minlength="5"
+              maxlength="100"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

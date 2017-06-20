@@ -1,0 +1,23 @@
+1. No diretório de destino realize o clone do GitHub:
+	abri o Git bash;
+	git init
+	git clone url_do_github
+2. Abrir o Visual Code:
+	Abrir VS Code
+	File > Open Folder
+	Ir er em View > Integrated Terminal
+	Digitar ng serve --watch (vai dar erro)
+	Abrir a url http://localhost:4200  (vai dar erro)
+3. Executar comando complementar:
+	Digitar npm install -g @angular/cli@latest --save-dev
+	Digitar ng serve -watch (vai dar erro)
+	Digitar npm install
+	Digitar ng serve --watch 
+
+
+
+Obs:
+ng build
+
+node server.js (rodar servidor agora, ng serve --watch não satisfaz mais)
+	

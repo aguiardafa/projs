@@ -1,0 +1,26 @@
+<div class="col-sm-12">
+  <article id="sobre-mim" class="row">
+    <h1>Sobre Mim</h1>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a enim ac nulla pretium sollicitudin nec vel nibh. Duis aliquet
+      quam dui, non tincidunt nibh sollicitudin et. Quisque ac tellus eu ligula maximus lacinia. Donec sed justo scelerisque,
+      ultricies quam nec, ultrices nulla. Sed mollis justo augue, ac rutrum lorem aliquam vel. Vivamus eget mollis arcu,
+      et aliquet lorem. Donec augue felis, tempus ac massa vitae, vehicula iaculis enim. Suspendisse ut sem in ex posuere
+      hendrerit sit amet in ex.
+    </div>
+  </article>
+</div>
+<section id="artigos" class="row">
+  <div class="col-md-6" *ngFor="let artigo of artigos;">
+    <div class="p-3"></div>
+    <article id="card artigo">
+      <div class="card-block">
+        <h2 class="card-title">{{artigo.titulo}}</h2>
+        <p class="card-text">
+          {{artigo.resumo}}
+        </p>
+        <a class="btn secondary btn-sm" [routerLink]="['/artigo', artigo.id]">Ler mais...</a>
+      </div>
+    </article>
+  </div>
+</section>
