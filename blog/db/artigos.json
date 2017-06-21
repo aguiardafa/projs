@@ -1,12 +1,12 @@
 [
-{
-	"titulo": "HTML 5 Vídeos",
-	"resumo": "Com a tag nativa.....",
-	"id":1
-},
-{
-	"titulo": "HTML 5 Vídeos",
-	"resumo": "Com a tag nativa.....",
-	"id": 2
-}
+	{
+		"titulo": "HTML 5 Vídeos",
+		"resumo": "Com a tag nativa de vídeo você possui uma experiência muito mais integrada no seu navegador e pode beneficiar-se de diversas possibilidades de manipulação de vídeo no contexto do HTML...",
+		"id":1
+	},
+	{
+		"titulo": "HTML 5: edição de conteúdos e nos campos de formulário",
+		"resumo": "O HTML 5 permite editar conteúdos direto na página, além de disponibilizar diversos novos tipos de campos formulário...",
+		"id": 2
+	}
 ]
