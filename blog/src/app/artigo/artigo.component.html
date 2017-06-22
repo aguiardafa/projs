@@ -1,0 +1,11 @@
+<div class="col-sm-12">
+  <article id="{{artigo.id}}" class="row">
+    <h1>{{artigo.titulo}}</h1>
+    <div>
+      {{artigo.resumo}}
+    </div>
+    <!-- Utilizando o recurso innerHtml do Angular -->
+    <!-- este renderiza na tag p conteudo da variável html -->
+    <div [innerHtml]="html"></div>
+  </article>
+</div>

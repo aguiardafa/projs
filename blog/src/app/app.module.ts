@@ -10,7 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import { ArtigoComponent } from './artigo/artigo.component';
-import {routes} from './routes';
+import { routes } from './router';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import {routes} from './routes';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule, 
     HttpModule,
     RouterModule.forRoot(routes)
   ],

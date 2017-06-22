@@ -19,8 +19,10 @@
         <p class="card-text">
           {{artigo.resumo}}
         </p>
-        <a class="btn btn-primary" [routerLink]="['/artigo', artigo.id]">Ler mais...</a>
+        <button class="btn btn-secondary btn-sm" [routerLink]="['/artigo', artigo.id]">Ler mais...</button>
       </div>
     </article>
   </div>
 </section>
+<!-- Component CONTATO -->
+<app-contato></app-contato>

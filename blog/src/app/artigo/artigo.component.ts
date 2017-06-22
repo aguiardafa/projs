@@ -20,7 +20,7 @@ export class ArtigoComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private http: Http,
     private zone: NgZone,
-    private sanitizer: DomSanitizer) { }
+    private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {

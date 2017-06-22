@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
     this.http.get('/api/artigos')
       .subscribe(artigos => {
         this.zone.run(() => {
-          debugger;
           this.resultadoArtigos(artigos);
         });
       });

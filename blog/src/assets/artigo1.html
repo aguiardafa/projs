@@ -1,8 +1,16 @@
 <div class="col-sm-12">
-  <article id="{{artigo.id}}" class="row">
-    <h1>{{artigo.titulo}}</h1>
-    <div>
-      {{artigo.resumo}}
-    </div>
-  </article>
+	<p>
+	Veja o vídeo abaixo:
+	</p>
+	<div style="text-align:center">
+		<video style="text-align:center" width="100%" id="video" name="video" controls loop preload="auto" autoplay>
+			<source src="/assets/lavadora.mp4" type="video/mp4">
+			Seu navegador não suporta este vídeo!!!
+		</video>
+	</div>
+	<p>
+		Aperte o botão abaixo para capturar imagens do vídeo
+	</p>
+	<button id="capture" name="capture" type="submit" class="btn btn-secondary btn-sm">Shot!</button>
+	<img id="output"></img>
 </div>

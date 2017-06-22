@@ -1,4 +1,4 @@
-1. No diretório de destino realize o clone do GitHub:
+1. No diretï¿½rio de destino realize o clone do GitHub:
 	abri o Git bash;
 	git init
 	git clone url_do_github
@@ -17,7 +17,15 @@
 
 
 Obs:
-ng build
+ng build -aot
 
-node server.js (rodar servidor agora, ng serve --watch não satisfaz mais)
+node server.js (rodar servidor agora, ng serve --watch nï¿½o satisfaz mais)
 	
+npm install bootstrap@4.0.0-alpha.6 -save
+npm install jquery-slim -save
+npm install tether -save
+
+Inserir no .angular-cli.json na parte de script incluir:
+"../node_modules/jquery-slim/dist/jquery.slim.js",
+"../node_modules/tether/dist/js/tether.js",
+"../node_modules/bootstrap/dist/js/bootstrap.min.js"

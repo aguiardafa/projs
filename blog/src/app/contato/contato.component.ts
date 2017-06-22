@@ -61,7 +61,7 @@ export class ContatoComponent implements OnInit {
     }
   }
   onSubmit(){
-    debugger; //clausula para debug do cliente
+    //debugger; //clausula para debug do cliente
     if(this.contatoForm.valid){
       let headers = new Headers(
         { 'Content-Type': 'application/json'}
