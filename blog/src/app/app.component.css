@@ -1,6 +1,19 @@
+/* @keyframes  */
+header{
+	animation: goDown 10s infinite;
+	position: relative;
+}
+
+@keyframes goDown{
+	0% { top: 0px; }
+	10% { top: 20px; }
+	95% { top: 20px; }
+	100% { top: 0px; }
+}
+
 #menu{
     padding: 1.5rem 0 2rem 0;
-    background-color: #2A3132;
+    background-color: #000;
     color: #fff
 }
 

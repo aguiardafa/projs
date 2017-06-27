@@ -5,6 +5,10 @@ import { FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+//validação do email
+import { Directive, forwardRef } from '@angular/core';
+import { ValidationErrors, AbstractControl } from '@angular/forms';
+
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
@@ -38,7 +42,8 @@ export class ContatoComponent implements OnInit {
   buildForm(){
     this.contatoForm = this.fb.group({
       'nome': ['', [Validators.required]],
-      'email': ['', [Validators.required]],
+      'email': ['', [Validators.required,
+					          EmailValidator.emailIsValid]],
       'texto': ['', [Validators.required,
                     Validators.minLength(4),
                     Validators.maxLength(100)]]
@@ -96,4 +101,18 @@ export class ContatoComponent implements OnInit {
 export class Resultado{
   //declarando variável
   sucess: false
+}
+
+//validação do email
+export class EmailValidator{
+	static emailIsValid(control: AbstractControl): ValidationErrors|null{
+		let EMAIL_REGEXP = 
+	/^[a-z0-9!#$%&'*+\/=?_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i;
+		
+		return EMAIL_REGEXP.test(control.value) ? null : {
+			emailIsValid: {
+				valid: false
+			}
+		};
+	}
 }

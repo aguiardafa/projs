@@ -6,3 +6,11 @@
 @media (max-width: 991px){}
 @media (max-width: 1199px){}
 @media (max-width: 1200px){}
+
+/* importação de fontes */
+@import url(https://fonts.googleapis.com/css?family=Rancho);
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Rancho', serif;
+}

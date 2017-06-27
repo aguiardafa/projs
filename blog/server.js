@@ -70,7 +70,8 @@ app.post('/api/contato', function (req, res) {
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('*', function (req, res) {
-    res.status(404).send({ error: 'API Not found' });
+    res.sendfile(path.join(__dirname, 'dist/index.html'));
+	//res.status(404).send({ error: 'API Not found' });
 });
 
 app.listen(process.env.PORT || 3000, function () {
